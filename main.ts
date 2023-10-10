@@ -11,42 +11,42 @@ basic.showIcon(IconNames.Happy)
 
 // variable
 let randomNumber: number = -1
-  let scoreboard: number = 0
+let scoreboard: number = 0
 
 // increase scoreboard
 input.onButtonPressed(Button.A, function () {
- scoreboard = scoreboard + 1
- basic.showIcon(IconNames.Yes)
+  scoreboard = scoreboard + 1
+  basic.showIcon(IconNames.Yes)
 })
 
-//show scoreboard
+ //show scoreboard
 input.onButtonPressed(Button.B, function () {
-basic.showNumber(scoreboard)
+  basic.showNumber(scoreboard)
 })
 
 input.onGesture(Gesture.Shake, function () {
   randomNumber = randint(0, 2)
   basic.clearScreen()
-// if randomNumber was 0
-  if (randomNumber == 0) {
-  basic.showIcon(IconNames.Scissors)
- }
+  // if randomNumber was 0
+  if (randomNumber === 0) {
+    basic.showIcon(IconNames.Scissors)
+  }
 
-  // if randomNumber was 1 
+  // if randomNumber was 1
 
- if (randomNumber == 1) {
-  basic.showLeds(`
+  if (randomNumber === 1) {
+    basic.showLeds(`
   . . . . .
   . # # # .
   . # # # .
   . # # # .
   . . . . .
   `)
- }
+  }
 
- // if randomNumber was 2
-  if (randomNumber == 2) {
-basic.showLeds(`
+  // if randomNumber was 2
+  if (randomNumber === 2) {
+    basic.showLeds(`
 # # # # #
 # . . . #
 # . . . #
