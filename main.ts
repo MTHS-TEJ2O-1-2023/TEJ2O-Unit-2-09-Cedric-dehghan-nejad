@@ -29,7 +29,7 @@ input.onGesture(Gesture.Shake, function () {
   basic.clearScreen()
   // if randomNumber was 0
   if (randomNumber === 0) {
-    basic.showIcon(IconNames.Scissors)
+  basic.showIcon(IconNames.Scissors)
   }
 
   // if randomNumber was 1
