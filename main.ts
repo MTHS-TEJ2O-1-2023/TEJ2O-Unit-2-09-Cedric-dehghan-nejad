@@ -18,8 +18,8 @@ input.onButtonPressed(Button.A, function () {
   scoreboard = scoreboard + 1
   basic.showIcon(IconNames.Yes)
 })
- 
-//show scoreboard
+
+ //show scoreboard
 input.onButtonPressed(Button.B, function () {
   basic.showNumber(scoreboard)
 })
