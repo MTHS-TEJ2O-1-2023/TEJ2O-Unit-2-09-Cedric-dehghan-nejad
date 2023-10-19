@@ -2,7 +2,7 @@
  *
  * Created by: Cedric
  * Created on: Oct 2023
- * This program ...
+ * This program plays rock paper Scissors
 */
 
 // setup
